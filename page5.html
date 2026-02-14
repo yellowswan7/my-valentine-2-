@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>my-valentine</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+    <!-- Google Web Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600&family=Nunito:wght@600;700;800&family=Pacifico&display=swap" rel="stylesheet">
+
+    <!-- Icon Font -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Template CSS -->
+    <link href="css/style.css" rel="stylesheet">
+<style>
+
+body{
+    margin:0;
+    background:#8FAFBE;
+    font-family:'Poppins', sans-serif;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:center;
+    height:100vh;
+    color:white;
+}
+
+/* QUESTION ANIMATION */
+.question{
+    font-size:32px;
+    text-align:center;
+    opacity:0;
+    animation:fadeIn 2s forwards;
+}
+
+@keyframes fadeIn{
+    to{ opacity:1; }
+}
+
+.buttons{
+    margin-top:40px;
+    opacity:0;
+    animation:fadeIn 2s forwards;
+    animation-delay:1.5s;
+}
+
+button{
+    padding:12px 30px;
+    margin:10px;
+    border:none;
+    border-radius:30px;
+    background:#132142;
+    color:white;
+    font-size:16px;
+    cursor:pointer;
+    transition:0.3s;
+}
+
+button:hover{
+    background:#08569B;
+    transform:scale(1.1);
+}
+
+</style>
+</head>
+
+<body>
+ <!-- SPINNER (identique au modèle) -->
+    <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+        <div class="spinner-border text-primary" style="width: 3rem; height: 3rem;" role="status"></div>
+    </div>
+
+    <!-- NAVBAR IDENTIQUE -->
+    <nav class="navbar navbar-expand-lg navbar-dark px-4 px-lg-5 py-3 py-lg-0">
+        <a href="index.html" class="navbar-brand p-0">
+            <h1 class="m-0 ff-secondary">Chacha</h1>
+        </a>
+
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+            <span class="fa fa-bars"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+            <div class="navbar-nav ms-auto py-0 pe-4">
+                <a href="index.html" class="nav-item nav-link">Home</a>
+
+                <div class="nav-item dropdown">
+                    <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Pages</a>
+                    <div class="dropdown-menu m-0">
+                        <a href="about.html" class="dropdown-item">page 2</a>
+                                <a href="service.html" class="dropdown-item">page 3</a>
+                                <a href="page4.html" class="dropdown-item">page 4</a>
+                                <a href="page5.html" class="dropdown-item">page 5</a>
+                                <a href="page6.html" class="dropdown-item">page 6</a>
+                    </div>
+                </div>
+            </div>
+
+            <a href="page6.html" class="btn btn-primary py-2 px-4">Next</a>
+        </div>
+    </nav>
+
+<nav>
+    <h2>So Chaïkana...</h2>
+</nav>
+
+<div class="question">
+    Do you want to be my Valentine this year ?
+</div>
+
+<div class="buttons">
+    <button onclick="location.href='page6.html'">ouiii ( ⸝⸝´꒳`⸝⸝)💕</button>
+    <button onclick="location.href='page6.html'">definitely ! ε(´｡•᎑•`)っ 💕</button>
+</div>
+<!-- JS (comme ton modèle) -->
+<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+<script src="js/main.js"></script>
+
+<script>
+    function ouvrirBoite() {
+        window.location.href = "page6.html";
+    }
+</script>
+
+</body>
+</html>
